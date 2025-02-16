@@ -1,0 +1,220 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    color: #50c0de;
+    background: linear-gradient(to bottom, #0398ac, #05968c);
+    transition: background 0.3s ease-in-out;
+}
+
+/* Header styles */
+.header-content {
+    background-image: url('./cp2.jpg'); /* Initial background image */
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust height as needed */
+    transition: background-image 0.2s ease; /* corrected transition property value */
+    position: relative; /* Added position relative */
+}
+
+.profile-pic {
+    text-align: right;
+    padding-top: 50px; /* Adjust as needed */
+}
+
+.profile-pic img {
+    width: 500px; /* Adjust image size as needed */
+    border-radius: 250%; /* For circular shape */
+}
+
+.profile-pic h1 {
+    margin-top: 50px; /* Adjust as needed */
+}
+
+.header-content:hover {
+    background-image: url('./cp.jpg'); /* New background image on hover */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    animation: rainbowColor 3s linear infinite; /* Flashing rainbow color animation */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Main styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+section h2 {
+    margin-top: 36px; /* Adjusted margin top */
+    font-size: 28px;
+    color: #0bf8f0;
+    margin-bottom: 10px;
+    animation: rainbowColor 3s linear infinite; /* Flashing rainbow color animation */
+    text-transform: uppercase; /* Capitalize text */
+    position: relative; /* Added position relative */
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #06f2f6;
+}
+
+/* Footer styles */
+footer {
+    background-color: #06fbf3;
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Center align text */
+    font-size: 18px; /* Increase font size */
+    white-space: nowrap; /* Prevent text from wrapping */
+    position: fixed; /* Position the footer */
+    bottom: 0; /* Align the footer to the bottom */
+    width: 100%; /* Make the footer full width */
+}
+
+/* Custom styles */
+.profile-pic {
+    text-align: center;
+    margin-bottom: 20px; /* Add margin to separate from other content */
+}
+
+.profile-pic img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Add space between the image and the name */
+}
+
+.profile-pic h1 {
+    margin: 0;
+    font-size: 24px; /* Increase font size for name */
+    color: #fff;
+}
+
+/* Inserted styles for the "Welcome!!!" heading animation */
+@keyframes rainbowColor {
+    0% { color: red; }
+    14.28% { color: orange; }
+    28.57% { color: yellow; }
+    42.85% { color: green; }
+    57.14% { color: blue; }
+    71.42% { color: indigo; }
+    85.71% { color: violet; }
+    100% { color: red; }
+}
+
+/* Animation for projects */
+.project {
+    position: relative; /* Ensure proper positioning of content within the project */
+    overflow: hidden; /* Hide overflow to prevent content from extending beyond the project */
+    animation: slideRightToLeft 60s linear infinite; /* Adjust duration and timing as needed */
+}
+
+.project img:not(.nav-link img),
+.project video {
+    width: 100%; /* Ensure media fills the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent any spacing issues */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+}
+
+/* Animation for projects */
+.project {
+    position: relative; /* Ensure proper positioning of content within the project */
+    overflow: hidden; /* Hide overflow to prevent content from extending beyond the project */
+    text-align: center; /* Align content to center */
+    max-width: 600px; /* Set maximum width */
+    margin: 0 auto; /* Center align the project container */
+}
+
+.project img:not(.nav-link img),
+.project video {
+    width: 100%; /* Ensure media fills the container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Limit maximum width to 100% of container */
+    display: block; /* Display as block to center align */
+    margin: 0 auto; /* Center align the media within the container */
+}
+
+/* Add CSS styles for the form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Form styles */
+    margin-left: 20px; /* Adjust margin as needed */
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
