@@ -5,33 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dengtiel's Resume</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./mobile.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="my-main-menu">
+            <div class="my-name-holder">
+                Mr. Dengtiel
+            </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="./About.html">About</a></li>
-                <li><a href="./Projects.html">Projects</a></li>
-                <li><a href="./Resume.html">Resume</a></li>
+                <li><a class="menu-items-li" href="#home">Home</a></li>
+                <li><a class="menu-items-li" href="#about">About</a></li>
+                <li><a class="menu-items-li" href="#projects">Projects</a></li>
+                <li><a class="menu-items-li" href="./Resume.html">Resume</a></li>
             </ul>
         </nav>
-        <div class="profile-pic">
-            <img src="media/Dengtiel-profile-photo.jpg" alt="Dengtiel's Picture">
-            <h1><strong><span style="color: aqua;">Dengtiel</span></strong></h1>
-        </div>
-    </header><br>
+    </header>
+    
 
     <main>
-        <section id="home">
-            <h2 id="welcome-heading"><span style="text-align: center;">Welcome!!!</span></h2><br>
-            <p>Hello and welcome to my resume website!</p>
-            <p>I am Deng Mayen Deng Akol, an aspiring Software Engineer,<br>
-               Graphic Designer, Video Editor, and UI/UX Designer.<br>
-               This website serves as a platform to showcase my<br>
-               skills, experiences, and projects.</p>
-            <p>Feel free to explore the various sections <br>
-               to learn more about me and my work.</p>
+        <section class="real-hello-section" id="home">
+            <div class="hello-sec-dr">
+                <div class="hello-sec-content">
+                    <h1>
+                        Hello,<br>
+                        I'm Dengtiel
+                    </h1>
+                    <p>
+                        I am happy to be woeking with you!
+                    </p>
+                    <div class="btn-hl">
+                        <button class="primary-btn indigo-btn" onclick="window.location.href='#contact-us'">Contact Me</button>
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+        <section class="my-hello-section" id="about">
+            
+            <div class="profile-pic">
+                <div class="profile-pic-hl">
+                    <div class="profile-pic-hl-hl">
+                        <img src="media/Dengtiel's-profile-photo.jpg" alt="Dengtiel's Picture">
+                    </div>
+                    
+                    <h1><strong><span style="color: aqua;">Dengtiel</span></strong></h1>
+                </div>
+            </div>
+            <div class="welcome-text">
+                <h1>About me</h1>
+                <h2>
+                    I am a motivated and dependable individual with a strong work ethic. I thrive under pressure and always meet deadlines, and now I am seeking a role where I can put these skills to use in planning, managing, and executing complex projects within a team.
+                </h2>
+            </div>
+        </section>
+        <section class="my-projects" id="projects">
+            <div class="my-projects-cont">
+                <h1>My Projects</h1>
+                <div class="my-projects-i-hl">
+                    <div class="my-projects-i">
+                        <div class="my-projects-i-dsec">
+                            <h2>LajikTech</h2>
+                            <p>
+                                As a contributor to their website, I played a role in developing and optimizing the 
+                                platform, utilizing skills in HTML, CSS, JavaScript, and backend technologies.  
+                                For more details, visit <a href="https://lajiktech.com" target="_blank">lajiktech.com</a>.
+                            </p>
+                        
+                        </div>
+                        <div class="my-projects-i-media">
+                            <video controls>
+                                <source src="media/Designerlajiktech.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="my-projects-i">
+                        <div class="my-projects-i-dsec">
+                            <h2>ALU Chess Tournament Victory</h2>
+                            <p>
+                                Winning the ALU Chess Tournament, earning a championship cup and gold medal, 
+                                showcased my strategic thinking and problem-solving skills—essential in both chess 
+                                and software engineering.
+                            </p>
+                        
+                        </div>
+                        <div class="my-projects-i-media">
+                            <img src="media/My-cup-gold-medal.jpg" alt="My cup & gold medal Image with kuir">
+                        </div>
+                    </div>
+                    <div class="my-projects-i">
+                        <div class="my-projects-i-dsec">
+                            <h2>Speech at the Welcoming of South Sudanese Students at ALU</h2>
+                            <p>
+                                This was a memorable day where I delivered a speech, showcasing my communication and public speaking skills. 
+                                Engaging with fellow students, I emphasized unity, leadership, and collaboration.
+                            </p>
+                        
+                        </div>
+                        <div class="my-projects-i-media">
+                            <video controls>
+                                <source src="media/communication-skills.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="my-projects-i">
+                        <div class="my-projects-i-dsec">
+                            <h2>This video was taken when I was designing African Learning Link Prototype</h2>
+                            <p>
+                                I was designing the African Learning Link (ALL) Prototype.
+                                This project allowed me to apply my UI/UX design skills using Figma, wireframing, and prototyping 
+                                to create an intuitive and user-friendly interface.
+                            </p>
+                        
+                        </div>
+                        <div class="my-projects-i-media">
+                            <video controls>
+                                <source src="media/designing-Alls-prototype.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section" id="contact-us">
+            <div class="contact-section-hl">
+                <h2><strong><span style="text-align: center;">Contact</span></strong></h2><br>
+                <form id="contact-form" action="mailto:d.akol@alustudent.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button style="color: indigo !important;" class="primary-btn" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            
         </section>
     </main>    
 

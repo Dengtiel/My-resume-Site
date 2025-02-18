@@ -1,223 +1,275 @@
-/* Reset some default styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+html {
+    scroll-behavior: smooth;
 }
-
-/* Body styles */
 body {
-    font-family: 'Courier New', Courier, monospace, sans-serif;
-    background-color: #fefefe;
-    color: #000; 
-    transition: background 0.3s ease-in-out;
-}
-nav{
-    background-color: #ffc107;
-    color: #000;
-}
-
-/* Header styles */
-.header-content {
-    background-image: url('media/cp2.jpg'); /* Initial background image */
-    background-size: cover;
-    background-position: center;
-    height: 300px; /* Adjust height as needed */
-    transition: background-image 0.2s ease; /* corrected transition property value */
-    position: relative; /* Added position relative */
-}
-
-.profile-pic {
-    text-align: right;
-    padding-top: 50px; /* Adjust as needed */
-}
-
-.profile-pic img {
-    width: 500px; /* Adjust image size as needed */
-    border-radius: 250%; /* For circular shape */
-}
-
-.profile-pic h1 {
-    margin-top: 50px; /* Adjust as needed */
-}
-
-.header-content:hover {
-    background-image: url('media/cp.jpg'); /* New background image on hover */
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
+    padding: 0;
 }
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-    animation: rainbowColor 3s linear infinite; /* Flashing rainbow color animation */
+header {
+    display: flex;
+    height: 80px;
+    width: 100vw;
 }
-
-nav ul li a {
-    color: #000;
+.my-main-menu {
+    position: fixed;
+    height: 80px;
+    background-color: indigo;
+    width: 100vw;
+    color: #fff;
+    display: flex
+;
+    justify-content: space-between;
+    z-index: 10;
+}
+.my-main-menu ul {
+    display: flex
+;
+    list-style: none;
+    width: calc(100% - 100px);
+    justify-content: space-around;
+    align-items: center;
+    max-width: 600px;
+}
+.my-name-holder {
+    width: 100px;
+    display: flex
+;
+    align-items: center;
+    font-family: fantasy;
+    padding-left: 20px;
+    justify-content: center;
+}
+.my-main-menu li{
+    list-style: none;
+    color: #fff;
+}
+.my-main-menu a {
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
 }
-
-nav ul li a:hover {
-    color: #ffc107;
+.menu-items-li:hover {
+    font-weight: bold;
+    color: #a3a3a3;
 }
-
-/* Main styles */
-main {
-    padding: 20px;
+section.my-hello-section {
+    display: flex
+;
+    width: 100%;
+    min-height: 100vh;
 }
-
-section {
-    margin-bottom: 40px;
-    position: relative;
+.profile-pic {
+    width: calc(50%);
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.profile-pic-hl {
+    max-width: 400px;
+    aspect-ratio: 1;
     overflow: hidden;
 }
-
-section h2 {
-    margin-top: 36px; /* Adjusted margin top */
-    font-size: 28px;
-    margin-bottom: 10px;
-    animation: rainbowColor 3s linear infinite; /* Flashing rainbow color animation */
-    text-transform: uppercase; /* Capitalize text */
-    position: relative; /* Added position relative */
-}
-
-section p {
-    font-size: 16px;
-    line-height: 1.5;
-    
-}
-
-/* Footer styles */
-footer {
-    background-color: #000000;
-    color: #fcfbfb;
-    padding: 20px;
-    text-align: center; /* Center align text */
-    font-size: 18px; /* Increase font size */
-    white-space: nowrap; /* Prevent text from wrapping */
-    position: fixed; /* Position the footer */
-    bottom: 0; /* Align the footer to the bottom */
-    width: 100%; /* Make the footer full width */
-}
-
-/* Custom styles */
-.profile-pic {
-    text-align: center;
-    margin-bottom: 20px; /* Add margin to separate from other content */
-}
-
-.profile-pic img {
-    width: 100px;
+.profile-pic-hl-hl {
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 40px);
+    margin: 20px;
+    overflow: hidden;
     border-radius: 50%;
-    margin-bottom: 10px; /* Add space between the image and the name */
+    aspect-ratio: 1;
 }
-
-.profile-pic h1 {
-    margin: 0;
-    font-size: 24px; /* Increase font size for name */
+.profile-pic-hl-hl img {
+    width: 100%;
+}
+.welcome-text {
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-direction: column;
+}
+.welcome-text h2 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    font-style: italic;
+    width: calc(100% - 80px);
+    margin: 40px;
+}
+.primary-btn {
+    padding-block: 20px;
+    padding-inline: 40px;
+    border-radius: 40px;
+    border: 2px solid indigo;
+    color: white;
+    font-size: 1.0rem;
+    font-weight: lighter;
+    background: transparent;
+}
+.primary-btn:hover {
+    background-color: indigo;
     color: #fff;
 }
-
-/* Inserted styles for the "Welcome!!!" heading animation */
-@keyframes rainbowColor {
-    0% { color: red; }
-    14.28% { color: orange; }
-    28.57% { color: yellow; }
-    42.85% { color: green; }
-    57.14% { color: blue; }
-    71.42% { color: indigo; }
-    85.71% { color: violet; }
-    100% { color: red; }
+.wl-btn-hl {
+    display: flex
+;
+    width: calc(100% - 40px);
+    margin: 20px;
+    justify-content: start;
 }
-
-/* Animation for projects */
-.project {
-    position: relative; /* Ensure proper positioning of content within the project */
-    overflow: hidden; /* Hide overflow to prevent content from extending beyond the project */
-    animation: slideRightToLeft 60s linear infinite; /* Adjust duration and timing as needed */
+.wl-btn-hl .primary-btn {
+    margin-right: 50px;
 }
-
-.project img:not(.nav-link img),
-.project video {
-    width: 100%; /* Ensure media fills the container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Prevent any spacing issues */
-    object-fit: cover; /* Cover the container while maintaining aspect ratio */
-}
-
-/* Animation for projects */
-.project {
-    position: relative; /* Ensure proper positioning of content within the project */
-    overflow: hidden; /* Hide overflow to prevent content from extending beyond the project */
-    text-align: center; /* Align content to center */
-    max-width: 600px; /* Set maximum width */
-    margin: 0 auto; /* Center align the project container */
-}
-
-.project img:not(.nav-link img),
-.project video {
-    width: 100%; /* Ensure media fills the container */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Limit maximum width to 100% of container */
-    display: block; /* Display as block to center align */
-    margin: 0 auto; /* Center align the media within the container */
-}
-
-/* Add CSS styles for the form */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Form styles */
-    margin-left: 20px; /* Adjust margin as needed */
-
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
+.welcome-text h1 {
     font-weight: bold;
+    font-size: 5rem;
+    width: calc(100% - 80px);
+    margin: 40px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+
+footer {
+    display: flex
+;
+    width: 100vw;
+    background: #000;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+section.real-hello-section {
+    background: url(./media/hello.jpg);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex
+;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hello-sec-dr {
+    background: #000000b3;
+    display: flex
+;
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    justify-content: start;
+    align-items: end;
+    padding-bottom: 80px;
 }
-
-textarea {
-    resize: vertical;
+.hello-sec-content {
+    margin-block: 10rem;
+    margin-inline: 7rem;
+    display: flex
+;
+    flex-direction: column;
+    max-width: 500px;
 }
-
-button {
+.hello-sec-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
     display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    margin-bottom: 0;
+    background: -webkit-linear-gradient(#ff9696, #962fe1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+.hello-sec-content p {
+    color: #fff;
+}
+section.my-projects {
+    display: flex
+;
+    background: #000;
+    justify-content: center;
+}
+.my-projects-cont {
+    width: 90%;
+    max-width: 800px;
+    margin-block: 80px;
+    color: #fff;
+}
+.my-projects-cont h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+.my-projects-i-hl {
+    display: flex
+;
+    flex-direction: column;
+}
+.my-projects-i {
+    background: white;
+    color: #000;
+    margin-block: 20px;
+    display: flex
+;
+    max-height: 250px;
+    overflow: hidden;
+}
+.my-projects-i-dsec {
+    width: calc(50%);
+    display: flex
+;
+    flex-direction: column;
+    padding: 20px;
+}
+.my-projects-i-media {
+    width: 50%;
+    display: flex
+;
+    justify-content: end;
+    overflow: hidden;
 
-button:hover {
-    background-color: #0056b3;
+}
+.my-projects-i-media video, img {
+    height: 100%;
+}
+section.contact-section {
+    display: flex
+;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    background: #fefe;
+}
+.contact-section-hl {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin-block: 80px;
+    height: 90%;
+    display: flex
+;
+    flex-direction: column;
+}
+.contact-section-hl h2 {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    font-weight: lighter;
+}
+.form-group {
+    width: calc(100% - 80px);
+    margin-inline: 40px;
+    margin-block: 20px;
+    display: flex
+;
+    flex-direction: column;
+}
+.form-group input {
+    border: none;
+    outline: none;
+}
+.form-group input, textarea {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    margin-top: 20px;
 }

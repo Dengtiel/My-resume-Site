@@ -1,0 +1,15 @@
+/* Mobile */
+@media (max-width: 850px) { 
+    section.my-hello-section {
+        flex-direction: column;
+        align-content: center;
+        height: max-content;
+    }
+    .profile-pic {
+        margin-inline: auto;
+        margin-top: 40px;
+    }
+    .welcome-text {
+        width: 100%;
+    }
+}
