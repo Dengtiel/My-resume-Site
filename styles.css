@@ -8,14 +8,18 @@
 /* Body styles */
 body {
     font-family: 'Courier New', Courier, monospace, sans-serif;
-    color: #50c0de;
-    background: linear-gradient(to bottom, #0398ac, #05968c);
+    background-color: #fefefe;
+    color: #000; 
     transition: background 0.3s ease-in-out;
+}
+nav{
+    background-color: #ffc107;
+    color: #000;
 }
 
 /* Header styles */
 .header-content {
-    background-image: url('./cp2.jpg'); /* Initial background image */
+    background-image: url('media/cp2.jpg'); /* Initial background image */
     background-size: cover;
     background-position: center;
     height: 300px; /* Adjust height as needed */
@@ -38,7 +42,7 @@ body {
 }
 
 .header-content:hover {
-    background-image: url('./cp.jpg'); /* New background image on hover */
+    background-image: url('media/cp.jpg'); /* New background image on hover */
 }
 
 nav ul {
@@ -54,7 +58,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
@@ -78,7 +82,6 @@ section {
 section h2 {
     margin-top: 36px; /* Adjusted margin top */
     font-size: 28px;
-    color: #0bf8f0;
     margin-bottom: 10px;
     animation: rainbowColor 3s linear infinite; /* Flashing rainbow color animation */
     text-transform: uppercase; /* Capitalize text */
@@ -88,13 +91,13 @@ section h2 {
 section p {
     font-size: 16px;
     line-height: 1.5;
-    color: #06f2f6;
+    
 }
 
 /* Footer styles */
 footer {
-    background-color: #06fbf3;
-    color: #fff;
+    background-color: #000000;
+    color: #fcfbfb;
     padding: 20px;
     text-align: center; /* Center align text */
     font-size: 18px; /* Increase font size */
