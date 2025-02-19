@@ -86,17 +86,22 @@ section.my-hello-section {
 .profile-pic-hl-hl img {
     width: 100%;
 }
+.welcome-text p {
+    display: flex;
+    width: calc(100% - 80px);
+    margin-inline: 40px;
+}
 .welcome-text {
     display: flex
 ;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     width: 50%;
     flex-direction: column;
 }
 .welcome-text h2 {
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-style: italic;
     width: calc(100% - 80px);
     margin: 40px;
